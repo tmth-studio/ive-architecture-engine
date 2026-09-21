@@ -10,8 +10,8 @@ Here, **verified** means: *the supplied artifact passed the versioned, mechanica
 
 ## What you can do with this
 
-1. Give their LLM `prompts/system.md` and a copy of `examples/synthetic-venture/input.json`.
-2. Ask it to return one JSON architecture artifact following `schemas/architecture.schema.json`.
+1. Give your LLM `prompts/system.md` and a copy of `examples/synthetic-venture/input.json`.
+2. Ask it to return a JSON architecture artifact following `schemas/architecture.schema.json`.
 3. Save that output as `architecture.json`.
 4. Run `python3 verifier/verify.py architecture.json`.
 
