@@ -8,7 +8,7 @@ An experimental, portable architecture method for turning a structured venture b
 
 Here, **verified** means: *the supplied artifact passed the versioned, mechanical checks in this repository*. Qualitative judgement, real-world validation, legal review, and expert sign-off remain separate human work.
 
-## What a friend can do with this
+## What you can do with this
 
 1. Give their LLM `prompts/system.md` and a copy of `examples/synthetic-venture/input.json`.
 2. Ask it to return one JSON architecture artifact following `schemas/architecture.schema.json`.
