@@ -1,0 +1,11 @@
+{
+  "version": "0.1",
+  "minimum_fmos": 0.25,
+  "hard_rules": [
+    "Every requirement has exactly one stated bottleneck and intervention.",
+    "Every requirement traces to one or more existing components and evidence records.",
+    "Every evidence record is sourced or has a named falsification test.",
+    "FMOS equals (price_ceiling - cost_floor) / cost_floor and is at least 25%.",
+    "No open item may be represented as resolved."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IVE venture input",
+  "type": "object",
+  "required": ["venture", "core_functionality", "customer", "observable_condition", "constraints"],
+  "properties": {
+    "venture": {"type": "string", "minLength": 3},
+    "core_functionality": {"type": "string", "minLength": 15},
+    "customer": {"type": "string", "minLength": 3},
+    "observable_condition": {"type": "string", "minLength": 15},
+    "constraints": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "object"}}
+  }
+}

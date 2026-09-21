@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1",
+  "venture": "ShiftLedger",
+  "requirements": [
+    {
+      "id": "R1",
+      "statement": "Capture a complete, accountable shift handover without duplicate transcription.",
+      "bottleneck": "The outgoing worker re-enters the same state into several unlinked records.",
+      "intervention": "Create one signed handover event that supplies each downstream record.",
+      "component_ids": ["C1", "C2"],
+      "evidence_ids": ["E1", "E2"],
+      "verification": "Run a simulated handover and confirm each required record receives the same event ID."
+    }
+  ],
+  "components": [
+    {"id": "C1", "name": "Signed handover event", "purpose": "Captures the outgoing worker's accountable handover."},
+    {"id": "C2", "name": "Record distributor", "purpose": "Routes the event to permitted operational records."}
+  ],
+  "evidence": [
+    {"id": "E1", "claim": "Duplicate entry occurs in the synthetic operating scenario.", "status": "evidenced", "source_or_test": "Synthetic scenario v1."},
+    {"id": "E2", "claim": "Care teams will accept a single signed event.", "status": "assumption", "source_or_test": "Pilot interview protocol.", "falsification_test": "Five user interviews and a supervised simulated handover."}
+  ],
+  "financial_model": {"price_ceiling": 160, "cost_floor": 120, "fmos": 0.3333333333},
+  "open_items": [{"id": "OPEN-1", "statement": "Validate acceptance in a real care setting.", "status": "open"}]
+}

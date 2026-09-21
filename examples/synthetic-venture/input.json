@@ -1,0 +1,7 @@
+{
+  "venture": "ShiftLedger",
+  "core_functionality": "Reconciles shift handovers into an auditable operational record.",
+  "customer": "Multi-site care providers",
+  "observable_condition": "Critical handover information is re-entered across disconnected records.",
+  "constraints": ["No sensitive patient data in prototype", "Must preserve human escalation"]
+}
