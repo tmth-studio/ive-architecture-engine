@@ -1,3 +1,5 @@
+> **Superseded — 22 September 2026.** This prototype was made with Codex on 21 September 2026 and is not the method. It has a six-line prompt, five rules and a script that checks the shape of one data file. The full method — the ten requirements, the design loop, the gate criteria, the verifier and the checking tools — is public at **[tmth-studio/forge-cf](https://github.com/tmth-studio/forge-cf)**. Use that. This repository stays only so old links still land somewhere.
+
 # IVE Architecture Engine — prototype
 
 An experimental, portable architecture method for turning a structured venture brief into an auditable architecture candidate, then checking that candidate against explicit published rules.
